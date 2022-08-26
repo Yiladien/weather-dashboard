@@ -25,11 +25,11 @@ var getWeather = function (cityname) {
           lat = data[0].lat;
 
           var apiWeatherUrl =
-            "https://api.openweathermap.org/data/3.0/onecall?lat=" +
+            "https://api.openweathermap.org/data/2.5/weather?lat=" +
             lat +
             "&lon=" +
             lon +
-            "&exclude=alerts&appid=" +
+            "&appid=" +
             apiKey;
           console.log(apiWeatherUrl);
 
